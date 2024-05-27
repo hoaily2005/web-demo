@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" style="background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(44, 208, 52) 35%, rgba(0, 212, 255, 1) 100%);">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ sơ của tôi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .gradient{
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(44, 208, 52) 35%, rgba(0, 212, 255, 1) 100%);
+
+        }
+        .container {
+            width: 630px;
+            background-color: rgba(246, 239, 239, 0.687);
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gradient">
+        <div class="container">
+            <h1 class="mt-5">My Profile</h1>
+            <p>
+                Manage profile information to secure your account!
+            </p>
+            <hr>
+            <div class="row">
+                <div class="col-md-8" style="width: 100%;">
+                    <form id="profileForm">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">
+                                <p id="username"></p>
+                            </label>
+                        </div>
+                        <div class="mb-3">
+                            <label for="fullname" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullname" placeholder="Full Name...">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">
+                                <p id="phone"></p>
+                            </label>
+                            <button type="button" id="changePhoneBtn" class="btn btn-primary">Change Phone</button>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">
+                                <p id="email"></p>
+                            </label>
+                            <button type="button" id="changeEmailBtn" class="btn btn-primary">Change Email</button>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password:</label>
+                            <input type="password" class="form-control" id="password" placeholder="New Password">
+                        </div>
+                        <div class="mb-3">
+                            <label for="gender" class="form-label">Sex:</label>
+                            <select class="form-select" id="gender">
+                                <option value="male">Female</option>
+                                <option value="female">Male</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="dob" class="form-label">Date of Birth:</label>
+                            <input type="date" class="form-control" id="dob">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                        <button type="button" id="exitButton" class="btn btn-danger float-end" >Exit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Lấy thông tin từ localStorage và điền vào các trường
+        window.onload = function () {
+            const userInfo = JSON.parse(localStorage.getItem("userData"));
+            if (userInfo) {
+                document.getElementById("username").innerText = "Tên đăng nhập: " + userInfo.username;
+                document.getElementById("fullname").value = userInfo.fullname;
+                document.getElementById("phone").innerText = "Số điện thoại: " + userInfo.phone;
+                document.getElementById("email").innerText = "Email: " + userInfo.email;
+            } else {
+                // Nếu chưa đăng nhập, chuyển hướng đến trang đăng nhập
+                window.location.href = "login.html";
+            }
+        };
+
+        document.getElementById("changePhoneBtn").addEventListener("click", function () {
+            var newPhone = prompt("Nhập số điện thoại mới:");
+            if (newPhone !== null && newPhone !== "") {
+                document.getElementById("phone").innerText = "Số điện thoại: " + newPhone;
+            }
+        });
+
+        document.getElementById("changeEmailBtn").addEventListener("click", function () {
+            var newEmail = prompt("Nhập email mới:");
+            if (newEmail !== null && newEmail !== "") {
+                document.getElementById("email").innerText = "Email: " + newEmail;
+            }
+        });
+
+        document.querySelector('#profileForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            var username = document.getElementById("username").innerText.split(": ")[1];
+            var fullname = document.getElementById("fullname").value;
+            var phone = document.getElementById("phone").innerText.split(": ")[1];
+            var email = document.getElementById("email").innerText.split(": ")[1];
+            var gender = document.getElementById("gender").value;
+            var password = document.getElementById("password").value;
+            var dob = document.getElementById("dob").value;
+            // Tạo đối tượng user mới
+            var updatedUser = {
+                username: username,
+                fullname: fullname,
+                phone: phone,
+                email: email,
+                gender: gender,
+                password: password,
+                dob: dob
+            };
+
+            // Cập nhật thông tin người dùng trong localStorage
+            localStorage.setItem("userData", JSON.stringify(updatedUser));
+            alert("Updated successfully!");
+        });
+        document.getElementById("exitButton").addEventListener("click", function () {
+            window.location.href = "index.html";
+        });
+    </script>
+
+</body>
+
+</html>
