@@ -1,0 +1,220 @@
+:root {
+    --bs-contact: #cfd6e1;
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #e4ecf4;
+    --bs-success: #55c490;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-footer: #212934;
+    --bs-h1:#333;
+    --bs-p:#666;
+    --bs-logofooter:#59ab6e;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+.bg-success {
+    background-color: var(--bs-logofooter) !important;
+    color:var(--bs-white);
+}
+
+.baner{
+    fill:#D80027;
+}
+
+.star{
+    fill:#FFDA44;
+}
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+#about {
+    color: var(--bs-white);
+    font-size: 1.5rem;
+}
+.col-md-4 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px; 
+}
+
+@media (max-width: 767.98px) {
+
+    .row {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .col-md-4 img {
+        margin-top: 2rem;
+    }
+}
+
+/* Services Section */
+#h1_our {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 220;
+    margin-bottom: 1rem;
+    color: var(--bs-h1);
+}
+#p_our {
+    color: var(--bs-p);
+    font-size: 1.6rem;
+}
+.service-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-item .h1 {
+    font-size: 2rem;
+}
+
+.service-item h2 {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+.bg-light {
+    background-color: var(--bs-light) !important;
+}
+
+.text-success {
+    color: var(--bs-logofooter) !important;
+}
+
+.rounded {
+    border-radius: 8px !important;
+}
+
+.p-4 {
+    padding: 2.5rem !important;
+}
+
+.mt-4 {
+    margin-top: 2rem !important;
+}
+
+.pb-5 {
+    padding-bottom: 4rem !important;
+}
+
+/* Responsive*/
+@media (max-width: 767.98px) {
+    .service-item {
+        margin-bottom: 2rem;
+    }
+}
+
+/*About*/
+#h1_about{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 220;
+    margin-bottom: 1rem;
+    color: var(--bs-h1);
+}
+#p_about{
+    color: var(--bs-p);
+    font-size: 1.6rem;
+}
+.carousel-item {
+    transition: transform 0.6s ease-in-out;
+}
+/* General Carousel Styling */
+.carousel-inner .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-inner .col-3 {
+    padding: 0.5rem;
+}
+
+.carousel-inner .p-md-5 {
+    padding: 1.5rem !important;
+}
+
+/* Image Styling */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.brand-img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effect */
+.brand-img:hover {
+    transform: scale(1.05);
+    filter: brightness(0.8);
+}
+
+/* Carousel Controls Styling */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.carousel-control-prev-icon {
+    margin-right: 11rem;
+    background-color: var(--bs-logofooter);
+}
+
+.carousel-control-next-icon {
+    margin-left: 11rem;
+    background-color: var(--bs-logofooter);
+}
+
+
+@media (max-width: 767.98px) {
+    .carousel-inner .col-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 10%;
+    }
+}

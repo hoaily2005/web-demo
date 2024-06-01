@@ -1,0 +1,88 @@
+body {
+    background: linear-gradient(90deg, rgb(199, 22, 128) 0%, rgb(44, 208, 52) 35%, rgba(0, 212, 255, 1) 100%);
+ }
+.bg-register-image {
+    background: url(https://themewagon.github.io/zay-shop/assets/img/banner_img_03.jpg) center center / cover;
+    height: 110vh;
+    border-radius: 5px 0 0 5px;
+    background-position: center center;
+}
+
+.bg-register-image .text-center {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+    height: 110vh;
+}
+
+.bg-register-image .text-center h1 {
+    color: #20c997;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.bg-register-image .text-center p.error-style {
+    color: #858796;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.bg-register-image .text-center span.error-style {
+    color: #e74a3b;
+    font-family: 'Nunito', sans-serif;
+    display: block;
+    font-size: 16px;
+    margin-top: 80px;
+}
+
+.bg-register-image .text-center input.btn-user {
+    background-color: #4e73df;
+    border: none;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bg-register-image .text-center input.btn-user:hover {
+    background-color: #2e59d9;
+}
+
+.form-group.d-flex.justify-content-center {
+    display: flex;
+    justify-content: center;
+}
+
+.form-group.d-flex.justify-content-center .btn-user {
+    width: auto;
+    min-width: 200px;
+}
+
+.form-control-user {
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.error-style {
+    color: red;
+    font-size: 12px;
+}
+
+.btn-user {
+    background-color: #4e73df;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-user:hover {
+    background-color: #2e59d9;
+}

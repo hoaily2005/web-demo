@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/de27554dbd.js" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="header_top">
+            <div class="container text-light">
+                <div class="w-100 d-flex justify-content-between">
+                    <div>
+                        <i class="fa fa-envelope mx-2"></i>
+                        <a class="navbar-sm-brand text-light text-decoration-none"
+                            href="mailto:info@company.com">info@company.com</a>
+                        <i class="fa fa-phone mx-2"></i>
+                        <a class="navbar-sm-brand text-light text-decoration-none"
+                            href="tel:010-020-0340">010-020-0340</a>
+                    </div>
+                    <div>
+                        <a class="text-light" href="https://fb.com/templatemo" rel="sponsored"><i
+                                class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                        <a class="text-light" href="https://www.instagram.com/"><i
+                                class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                        <a class="text-light" href="https://twitter.com/"><i
+                                class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
+                        <a class="text-light" href="https://www.linkedin.com/"><i
+                                class="fab fa-linkedin fa-sm fa-fw"></i></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                            id="Capa_1" x="0px" y="0px" width="56px" height="36px" viewBox="0 0 512 512"
+                            style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <polygon class="baner"
+                                points="196.641,85.337 0,85.337 0,426.663 196.641,426.663 512,426.663 512,85.337 ">
+                            </polygon>
+                            <polygon class="star"
+                                points="256,188 271,233 320,233 278,263 293,308 256,278 219,308 234,263 192,233 241,233" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light shadow">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="navbar-brand logo h1 align-self-center" href="index.html">Zay</a>
+                <button class="navbar-toggler border-0" type="button" onclick="toggleNavbar()" data-bs-toggle="collapse" data-bs-target="header_main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+                    id="header_main">
+                    <div class="flex-fill">
+                        <ul class="nav navbar-nav mx-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="shop.html">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar align-self-center d-flex">
+                        <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+                                <div class="input-group-text">
+                                    <i class="fa fa-fw fa-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal">
+                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                    </a>
+                    <div class="dropdown">
+                        <a class="nav-icon position-relative text-decoration-none dropdown-toggle" href="#"
+                            role="button" id="accountDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="accountDropdown">
+                            <li><a class="dropdown-item" href="thongtinuser.html">Account information</a></li>
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="register.html">Register</a></li>
+                            <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <article>
+        <section class="bg-success py-5">
+            <div class="container">
+                <div class="row align-items-center py-5">
+                    <div class="col-md-8">
+                        <h1>About Us</h1>
+                        <p class="lead mb-0" id="about">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://themewagon.github.io/zay-shop/assets/img/about-hero.svg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container py-5">
+            <div class="row text-center">
+                <div class="col-lg-6 m-auto">
+                    <h1 id="h1_our">Our Services</h1>
+                    <p id="p_our">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 pb-5">
+                    <div class="h-100 service-item bg-light rounded p-4">
+                        <div class="h1 text-success text-center">
+                            <i class="fa fa-truck fa-lg"></i>
+                        </div>
+                        <h2 class="mt-4 text-center">Delivery Services</h2>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 pb-5">
+                    <div class="h-100 service-item bg-light rounded p-4">
+                        <div class="h1 text-success text-center">
+                            <i class="fa-solid fa-right-left"></i>
+                        </div>
+                        <h2 class="mt-4 text-center">Shopping & Return</h2>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 pb-5">
+                    <div class="h-100 service-item bg-light rounded p-4">
+                        <div class="h1 text-success text-center">
+                            <i class="fa-solid fa-percent"></i>
+                        </div>
+                        <h2 class="mt-4 text-center">Promotion</h2>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 pb-5">
+                    <div class="h-100 service-item bg-light rounded p-4">
+                        <div class="h1 text-success text-center">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <h2 class="mt-4 text-center">24 Hours Service</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-light py-5">
+            <div class="container my-4">
+                <div class="row text-center py-3">
+                    <div class="col-lg-6 m-auto">
+                        <h1 id="h1_about">Our Brands</h1>
+                        <p id="p_about">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                    <div class="col-lg-9 m-auto slide_brand">
+                        <div id="brandCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active ">
+                                    <div class="row">
+                                        <div class="col-3 p-md-5">
+                                            <img src="https://themewagon.github.io/zay-shop/assets/img/brand_01.png"
+                                                class="img-fluid brand-img" alt="Brand 1">
+                                        </div>
+                                        <div class="col-3 p-md-5">
+                                            <img src="https://themewagon.github.io/zay-shop/assets/img/brand_02.png"
+                                                class="img-fluid brand-img" alt="Brand 2">
+                                        </div>
+                                        <div class="col-3 p-md-5">
+                                            <img src="https://themewagon.github.io/zay-shop/assets/img/brand_03.png"
+                                                class="img-fluid brand-img" alt="Brand 3">
+                                        </div>
+                                        <div class="col-3 p-md-5">
+                                            <img src="https://themewagon.github.io/zay-shop/assets/img/brand_04.png"
+                                                class="img-fluid brand-img" alt="Brand 4">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-3 p-md-5">
+                                            <img src="https://themewagon.github.io/zay-shop/assets/img/brand_01.png"
+                                                class="img-fluid brand-img" alt="Brand 1">
+                                        </div>
+                                        <div class="col-3 p-md-5">
+                                            <img src="https://themewagon.github.io/zay-shop/assets/img/brand_02.png"
+                                                class="img-fluid brand-img" alt="Brand 2">
+                                        </div>
+                                        <div class="col-3 p-md-5">
+                                            <img src="https://themewagon.github.io/zay-shop/assets/img/brand_03.png"
+                                                class="img-fluid brand-img" alt="Brand 3">
+                                        </div>
+                                        <div class="col-3 p-md-5">
+                                            <img src="https://themewagon.github.io/zay-shop/assets/img/brand_04.png"
+                                                class="img-fluid brand-img" alt="Brand 4">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-3 p-md-5">
+                                            <img src="https://themewagon.github.io/zay-shop/assets/img/brand_01.png"
+                                                class="img-fluid brand-img" alt="Brand 1">
+                                        </div>
+                                        <div class="col-3 p-md-5">
+                                            <img src="https://themewagon.github.io/zay-shop/assets/img/brand_02.png"
+                                                class="img-fluid brand-img" alt="Brand 2">
+                                        </div>
+                                        <div class="col-3 p-md-5">
+                                            <img src="https://themewagon.github.io/zay-shop/assets/img/brand_03.png"
+                                                class="img-fluid brand-img" alt="Brand 3">
+                                        </div>
+                                        <div class="col-3 p-md-5">
+                                            <img src="https://themewagon.github.io/zay-shop/assets/img/brand_04.png"
+                                                class="img-fluid brand-img" alt="Brand 4">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev w-auto" href="#brandCarousel" role="button"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon bg-dark shadow" aria-hidden="true"></span>
+                            </a>
+                            <a class="carousel-control-next w-auto" href="#brandCarousel" role="button"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon bg-dark shadow" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+
+
+
+    <footer class="bg-dark" id="tab_fotter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 pt-5">
+                    <h2 class="border-bottom pb-3 border-light" id="logo_footer">Zay Shop</h2>
+                    <ul class="list-unstyled text-light menu_footer">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i> <a class="text-decoration-none" href="#"> 123
+                                Consectetur at ligula 10660 </a>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i> <a class="text-decoration-none" href="#"> 010-020-0340</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i> <a class="text-decoration-none" href="#">
+                                9iI6D@example.com</a>
+                        </li>
+                    </ul>
+                    <!-- iframe map -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d7564.682035907045!2d107.94742241356161!3d12.636715943043804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDM4JzE5LjAiTiAxMDfCsDU3JzAzLjIiRQ!5e0!3m2!1svi!2s!4v1715778491153!5m2!1svi!2s"
+                        width="85%" height="240" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="border-bottom pb-3 border-light" id="menu2_footer">Categories</h2>
+                    <ul class="list-unstyled text-light menu_footer">
+                        <li><a class="text-decoration-none" href="#">Luxury</a></li>
+                        <li><a class="text-decoration-none" href="#">Sport Wear</a></li>
+                        <li><a class="text-decoration-none" href="#">Men's Shoes</a></li>
+                        <li><a class="text-decoration-none" href="#">Women's Shoes</a></li>
+                        <li><a class="text-decoration-none" href="#">Popular Dress</a></li>
+                        <li><a class="text-decoration-none" href="#">Gym Suppliments</a></li>
+                        <li><a class="text-decoration-none" href="#">Sport Shoes</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="border-bottom pb-3 border-light" id="menu2_footer">Newsletter</h2>
+                    <ul class="list-unstyled text-light menu_footer">
+                        <li><a class="text-decoration-none" href="index.html">Home</a></li>
+                        <li><a class="text-decoration-none" href="about.html">About Us</a></li>
+                        <li><a class="text-decoration-none" href="#">Shop Locations</a></li>
+                        <li><a class="text-decoration-none" href="#">FAQs</a></li>
+                        <li><a class="text-decoration-none" href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="row text-light mb-4">
+                    <div class="col-12 mb-3">
+                        <div class="w-100 my-3 border-top border-light">
+
+                        </div>
+                        <div class="col-auto mb-3">
+                            <ul class="list-inline icon_footer">
+                                <li class="list-inline-item border">
+                                    <a class="text-light text-decoration-none" href="#"><i
+                                            class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                                </li>
+                                <li class="list-inline-item border">
+                                    <a class="text-light text-decoration-none" href="#"><i
+                                            class="fab fa-instagram fa-lg fa-fw"></i></a>
+                                </li>
+                                <li class="list-inline-item border">
+                                    <a class="text-light text-decoration-none" href="#"><i
+                                            class="fab fa-twitter fa-lg fa-fw"></i></a>
+                                </li>
+                                <li class="list-inline-item border">
+                                    <a class="text-light text-decoration-none" href="#"><i
+                                            class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-auto">
+                            <h2 class="text-light mb-3" id="menu2_footer">Sign up for email to receive promotional news
+                            </h2>
+                            <label class="sr-only" id="subscribeEmail">Email address</label>
+                            <div class="input-group mb-2">
+                                <input type="text" class="form-control bg-dark" style="color: whitesmoke;"
+                                    id="subscribeEmail" placeholder="Email address">
+                                <div class="input-group-text btn-success text-light">Subscribe</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            Copyright &copy; 2021 Company Name | Designed by <a href="#">TemplateMo</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz4fnFO9gyb2vU6dAkK5yDZIOm3Cc7HhnUjz7q3MsFUmDZZV+oURgqqt7E"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
